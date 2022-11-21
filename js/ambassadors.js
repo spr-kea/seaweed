@@ -12,6 +12,7 @@ function dataReceived(data) {
   //console.log(hello, post);
 }
 
+//STOP
 function showSingleAmbassador(ambassador) {
   //template
   const template = document.querySelector("template").content;

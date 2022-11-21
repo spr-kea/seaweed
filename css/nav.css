@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+main {
+  width: 90vw;
+  height: 100vh;
+  margin: auto;
+}
 /* Navbar */
 nav {
   height: auto;
