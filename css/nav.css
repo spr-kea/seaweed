@@ -1,0 +1,150 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --blue: blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+  height: auto;
+  width: 100%;
+  background: var(--black);
+  display: flex !important;
+  justify-content: space-between;
+  padding: 0 7em;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar {
+  text-align: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.nav-menu li {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: Montserrat;
+}
+
+a.nav-link:hover {
+  color: var(--blue);
+  transition: 0.5s ease;
+}
+
+a.nav-link::before {
+  width: 500%;
+}
+
+a.nav-link::after {
+  width: 500%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  width: 1.5rem;
+  height: 3px;
+  display: block;
+  padding: 0;
+  margin: 6px;
+  transition: 0.5s;
+  background-color: var(--white);
+}
+
+.navbar ul li {
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 0 1rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* //media query for mobile  */
+
+@media screen and (max-width: 992px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(-315deg);
+  }
+  .active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  nav {
+    padding: 0 3em;
+  }
+  .nav-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -110%;
+    transition: 0.5s;
+    margin: 0 auto;
+    background: var(--black);
+  }
+
+  .nav-menu .nav-item {
+    padding: 1rem 0;
+  }
+
+  a.nav-link {
+    margin: 1rem 0;
+    color: var(--white);
+    z-index: 1;
+  }
+
+  .active {
+    left: 0;
+    z-index: 100;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  a.nav-link {
+    padding: 0.75rem 0;
+  }
+}
