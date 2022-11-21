@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&display=swap");
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --red: #70271e;
+  --beige: #f8f9f4;
+  --grey: #f1f1f1;
+}
+
+body {
+  background-color: var(--beige);
+}
+
+img {
+  width: 50%;
+  align-self: center;
+}
+
+.ambassadors {
+  border: 1px solid var(--black);
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+.ig__username,
+.ig__name {
+  padding-left: 1em;
+  font-family: montserrat;
+  font-style: italic;
+  margin: 0;
+  padding: 1em;
+}
+
+.description {
+  font-family: montserrat;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.name {
+  font-family: Cinzel;
+  font-size: 2.5em;
+  border-bottom: 1px solid grey;
+  margin-top: 0;
+}
+
+.ig__link {
+  text-decoration: none;
+  font-family: montserrat;
+  align-self: center;
+  border: 1px solid var(--red);
+  padding: 0.5em;
+  color: var(--red);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.ig__link:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.favorite span {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* .logo {
+  max-width: 200px;
+}
+
+p {
+  font-family: montserrat;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  font-family: Cinzel;
+  list-style: none;
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--red);
+} */
