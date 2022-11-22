@@ -9,7 +9,6 @@ function dataReceived(data) {
   //do something with the data
   console.log(data);
   data.forEach(showSingleAmbassador);
-  //console.log(hello, post);
 }
 
 //STOP
@@ -21,12 +20,18 @@ function showSingleAmbassador(ambassador) {
   console.log(ambassador);
   //put the content into it
   //ambassador name
-  clone.querySelector(".name").textContent = ambassador.username.rendered;
-  //ig username
+  clone.querySelector(".name").textContent = ambassador.username;
   clone.querySelector(".ig__username span").textContent =
     ambassador.instagram_user;
-  //ig link
-  clone.querySelector(".ig__link").textContent = ambassador.instagram_link;
+  //ig username
+  clone.querySelector(".favorite span").textContent =
+    ambassador.favorite_sea_creature;
+  clone.querySelector(".description").textContent =
+    ambassador.why_i_am_an_ambassador;
+  //ig link using dollar sign (Template litterals)
+  clone.querySelector(
+    ".ig__link"
+  ).textContent = `Link to IG profile: ${ambassador.instagram_link}`;
   //image
   clone.querySelector("img").src =
     ambassador._embedded[
