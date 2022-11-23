@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../media/logo.svg" alt="logo" width="90px" />
+            <div class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Join Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <template>
+            <article class="ambassadors">
+                <img src="https://johannela.dk/car…/11/caroline-199x300.png" alt="caroline" />
+                <p class="name">Caroline</p>
+                <p class="description">
+                    Caroline has been volunteering since she was a young child in
+                    numerous organisations. Now she wants to use social media to share
+                    her mission with others...
+                </p>
+                <p class="favorite">Favorite Sea Creature: <span>Octopus</span></p>
+                <div class="ig__username">
+                    <span>IG username -</span>
+
+                    <div class="IG__name">Caroline</div>
+                </div>
+                <a class="ig__link" href="#">Link to IG profile: </a>
+            </article>
+        </template>
+    </main>
+    <script src="../js/nav.js"></script>
+    <script src="../js/ambassadors.js"></script>
+
+
+    <section id="submiit_template">
+        <form action="" method="get" class="ambassador_application">
+            <div class="ambassador_application">
+                <label for="name">Enter your name: </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="ambassador_application">
+                <label for="email">Enter your email: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="ambassador_application">
+                <label for="url">Enter your instagram profile url: </label>
+                <input type="url" name="url" id="url" required>
+            </div>
+            <div class="ambassador_application">
+                <label for="creature">Enter your favorite sea creature: </label>
+                <input type="text" name="creature" id="creature" required>
+            </div>
+            <div class="ambassador_application">
+                <label for="textarea">What's your motivation?</label>
+                <textarea id="textarea" class="ambassador_application" rows="4" cols="50" name="textarea"></textarea>
+            </div>
+            <div class="ambassador_application">
+                <label for="textarea">What's your favorute cause and why?</label>
+                <textarea id="textarea" class="ambassador_application" rows="4" cols="50" name="textarea"></textarea>
+            </div>
+            <div class="ambassador_application">
+                <input type="submit" value="Apply!">
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
