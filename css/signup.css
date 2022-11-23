@@ -1,0 +1,42 @@
+#flexbox {
+    margin-top: 10vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    background-image: url(/media/seaturtle-signup.jpg);
+}
+
+#flexbox h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vw;
+
+}
+
+#flexwrap {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+
+}
+
+#container1 {
+    color: white;
+    padding-right: 2vw;
+}
+
+#container2 {
+    color: white;
+    border-left: white solid 0.3em;
+    border-right: white solid 0.3em;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+}
+
+#container3 {
+    color: white;
+    padding-left: 2vw;
+}
