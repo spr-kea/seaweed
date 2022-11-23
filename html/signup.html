@@ -28,24 +28,28 @@
       <main>
       <section id="submiit_template">
         <form action="" method="get" class="ambassador_application">
+          <div id="form-container1">
           <div class="ambassador_application">
-            <label for="name">Enter your name: </label>
+            <label for="name" class="large-label">Enter your name: </label>
             <input type="text" name="name" id="name" required />
           </div>
           <div class="ambassador_application">
-            <label for="email">Enter your email: </label>
+            <label for="email" class="large-label">Enter your email: </label>
             <input type="email" name="email" id="email" required />
           </div>
           <div class="ambassador_application">
-            <label for="url">Enter your instagram profile url: </label>
+            <label for="url" class="large-label">Enter your instagram profile url: </label>
             <input type="url" name="url" id="url" required />
           </div>
+        
           <div class="ambassador_application">
-            <label for="creature">Enter your favorite sea creature: </label>
+            <label for="creature" class="large-label">Enter your favorite sea creature: </label>
             <input type="text" name="creature" id="creature" required />
           </div>
+        </div>
+          <div id="form-container2">
           <div class="ambassador_application">
-            <label for="textarea">What's your motivation?</label>
+            <label for="textarea" class="large-label">What's your motivation?</label>
             <textarea
               id="textarea"
               class="ambassador_application"
@@ -55,7 +59,7 @@
             ></textarea>
           </div>
           <div class="ambassador_application">
-            <label for="textarea">What's your favorute cause and why?</label>
+            <label for="textarea" class="large-label">What's your favorute cause and why?</label>
             <textarea
               id="textarea"
               class="ambassador_application"
@@ -67,6 +71,7 @@
           <div class="ambassador_application">
             <input type="submit" value="Apply!" />
           </div>
+        </div>
         </form>
       </section>
       <div id="flexbox">
@@ -104,6 +109,7 @@
           </div>
         </div>
       </div>
+      </main>
       <script src="../js/nav.js"></script>
       <script src="../js/ambassadors.js"></script>
     </body>
