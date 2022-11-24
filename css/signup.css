@@ -2,20 +2,35 @@
     --black: #000000;
     --white: #ffffff;
     --blue: blue;
+    --lightblue: #D7E4F2;
 }
 
 /*form styling*/
+.h2-form-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #h2-form {
     color: blue;
     display: flex;
     justify-content: center;
     margin-top: 10vw;
+    z-index: 1000;
+    font-size: 3rem;
+}
+
+#h2-color-box-signup {
+    background-color: #D7E4F2;
+    height: 60px;
+    width: 400px;
+    transform: translate(-60px, -85px);
+    z-index: 1;
 }
 
 #submiit_template {
     border: 4px solid blue;
-    border-radius: 1rem;
     margin-top: 2vw;
     padding: 4vw
 }
@@ -45,7 +60,7 @@ textarea {
     background-color: transparent;
     border: 2px solid blue;
     background-color: white;
-    border-radius: 0.5rem;
+
 }
 
 input[type="text"],
@@ -59,7 +74,7 @@ textarea {
     width: 100%;
     padding: 0.5rem 0.75rem;
     border: 2px solid blue;
-    border-radius: 0.5rem;
+
 }
 
 
