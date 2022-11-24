@@ -179,13 +179,6 @@ a {
 }
 
 @media only screen and (min-width: 900px) {
-  :root {
-    --h1: 1.7rem;
-    --h2: 3rem;
-    --h3: 2.2rem;
-    --h4: 1.6rem;
-    --p: 1.3rem;
-  }
   #meet_ambassadors {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -213,13 +206,6 @@ a {
 }
 
 @media only screen and (min-width: 1100px) {
-  :root {
-    --h1: 3rem;
-    --h2: 3rem;
-    --h3: 2.2rem;
-    --h4: 1.6rem;
-    --p: 1.3rem;
-  }
   #meet_ambassadors {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
