@@ -1,87 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/signup.css" />
     <link rel="stylesheet" href="../css/nav.css" />
-    <title>Document</title>
-</head>
-
-<body>
-    <header>
+    <title>Sign Up!</title>
+  </head>
+    <body>
+      <header>
         <nav>
-            <img src="../media/logo.svg" alt="logo" width="90px" />
-            <div class="navbar">
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#" class="nav-link">Join Us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                </ul>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+          <img src="../media/logo.svg" alt="logo" width="90px" />
+          <div class="navbar">
+            <ul class="nav-menu">
+              <li class="nav-item"><a href="#" class="nav-link">Join Us</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
-    </header>
-    <main>
-        <template>
-            <article class="ambassadors">
-                <img src="https://johannela.dk/car…/11/caroline-199x300.png" alt="caroline" />
-                <p class="name">Caroline</p>
-                <p class="description">
-                    Caroline has been volunteering since she was a young child in
-                    numerous organisations. Now she wants to use social media to share
-                    her mission with others...
-                </p>
-                <p class="favorite">Favorite Sea Creature: <span>Octopus</span></p>
-                <div class="ig__username">
-                    <span>IG username -</span>
+      </header>
+      <main>
+        <div id="flexbox">
+          <h2 class="signuph2">AMBASSADOR'S BENEFITS</h2>
+          <div id="flexwrap">
+            <div id="container1">
+              <div class="colorbox-wrap1">
+              <h3 class="signuph3">Last season collection</h3>
+              <div id="colorbox-container1"></div></div>
+              <p class="signuptext">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <br />
+                Nobis, ea quidem consequatur vero nihil illo officia temporibus
+                neque ut assumenda cupiditate delectus? <br />Inventore voluptate
+                voluptatibus accusamus quam praesentium laborum commodi.
+              </p>
+            </div>
+            <div id="container2">
+              <div class="colorbox-wrap2">
+              <h3 class="signuph3">Special discounts</h3>
+              <div id="colorbox-container2"></div></div>
+              <p class="signuptext">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <br />
+                Nobis, ea quidem consequatur vero nihil illo officia temporibus
+                neque ut assumenda cupiditate delectus? <br />Inventore voluptate
+                voluptatibus accusamus quam praesentium laborum commodi.
+              </p>
+            </div>
+            <div id="container3">
+              <div class="colorbox-wrap3">
+              <h3 class="signuph3">Our future development</h3>
+              <div id="colorbox-container3"></div></div>
+              <p class="signuptext">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <br />
+                Nobis, ea quidem consequatur vero nihil illo officia temporibus
+                neque ut assumenda cupiditate delectus? <br />Inventore voluptate
+                voluptatibus accusamus quam praesentium laborum commodi.
+              </p>
+            </div>
+          </div>
+        </div>
+       <div class="h2-form-class">
+        <h2 id="h2-form">JOIN THE #TEAM</h2>
+        <div id="h2-color-box-signup"></div>
+       </div>
 
-                    <div class="IG__name">Caroline</div>
-                </div>
-                <a class="ig__link" href="#">Link to IG profile: </a>
-            </article>
-        </template>
-    </main>
-    <script src="../js/nav.js"></script>
-    <script src="../js/ambassadors.js"></script>
-
-
-    <section id="submiit_template">
+      <section id="submiit_template">
         <form action="" method="get" class="ambassador_application">
-            <div class="ambassador_application">
-                <label for="name">Enter your name: </label>
-                <input type="text" name="name" id="name" required>
-            </div>
-            <div class="ambassador_application">
-                <label for="email">Enter your email: </label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="ambassador_application">
-                <label for="url">Enter your instagram profile url: </label>
-                <input type="url" name="url" id="url" required>
-            </div>
-            <div class="ambassador_application">
-                <label for="creature">Enter your favorite sea creature: </label>
-                <input type="text" name="creature" id="creature" required>
-            </div>
-            <div class="ambassador_application">
-                <label for="textarea">What's your motivation?</label>
-                <textarea id="textarea" class="ambassador_application" rows="4" cols="50" name="textarea"></textarea>
-            </div>
-            <div class="ambassador_application">
-                <label for="textarea">What's your favorute cause and why?</label>
-                <textarea id="textarea" class="ambassador_application" rows="4" cols="50" name="textarea"></textarea>
-            </div>
-            <div class="ambassador_application">
-                <input type="submit" value="Apply!">
-            </div>
+          <div id="form-container1">
+          <div class="ambassador_application">
+            <label for="name" class="large-label">Enter your name: </label>
+            <input type="text" name="name" id="name" placeholder="Full Name" required />
+          </div>
+          <div class="ambassador_application">
+            <label for="email" class="large-label">Enter your email: </label>
+            <input type="email" name="email" id="email" placeholder="savetheoceans@seaturtle.com" required />
+          </div>
+          <div class="ambassador_application">
+            <label for="url" class="large-label">Enter your instagram profile url: </label>
+            <input type="url" name="url" id="url" required />
+          </div>
+        
+          <div class="ambassador_application">
+            <label for="creature" class="large-label">Enter your favorite sea creature: </label>
+            <input type="text" name="creature" id="creature" required />
+          </div>
+        </div>
+          <div id="form-container2">
+          <div class="ambassador_application">
+            <label for="textarea" class="large-label">What's your motivation?</label>
+            <textarea
+              id="textarea"
+              class="ambassador_application"
+              rows="4"
+              cols="50"
+              name="textarea"
+            ></textarea>
+          </div>
+          <div class="ambassador_application">
+            <label for="textarea" class="large-label">What's your favorute cause and why?</label>
+            <textarea
+              id="textarea"
+              class="ambassador_application"
+              rows="4"
+              cols="50"
+              name="textarea"
+            ></textarea>
+          </div>
+          <div class="ambassador_application" id="button-submit">
+            <input type="submit" name="submit" value="Submit Application" id="submit" />
+          </div>
+        </div>
         </form>
-    </section>
-
-</body>
-
+      </section>
+      </main>
+      <footer></footer>
+      <script src="../js/nav.js"></script>
+      <script src="../js/ambassadors.js"></script>
+    </body>
+  </html>
 </html>
