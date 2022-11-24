@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/nav.css" />
     <title>Document</title>
 </head>
@@ -27,24 +28,85 @@
         </nav>
     </header>
     <main>
-        <template>
-            <article class="ambassadors">
-                <img src="https://johannela.dk/car…/11/caroline-199x300.png" alt="caroline" />
-                <p class="name">Caroline</p>
-                <p class="description">
-                    Caroline has been volunteering since she was a young child in
-                    numerous organisations. Now she wants to use social media to share
-                    her mission with others...
-                </p>
-                <p class="favorite">Favorite Sea Creature: <span>Octopus</span></p>
-                <div class="ig__username">
-                    <span>IG username -</span>
-
-                    <div class="IG__name">Caroline</div>
+        <section id="welcome_and_about">
+            <article id="welcome">
+                <div class="welcome_logo">
+                    <img src="/media/CC_horizontal_Logo.png" alt="Copenhagen Cartel ambassadors logo">
                 </div>
-                <a class="ig__link" href="#">Link to IG profile: </a>
+                <div class="wemcome_h1">
+                    <h1>Community environmentalists like you</h1>
+                </div>
+                <div class="welcome_button">
+                    <a href="signup.html"><button>GET STARTED</button></a>
+                </div>
             </article>
-        </template>
+            <article id="about">
+                <div class="about_become">
+                    <h2>BECOME AN AMBASSADOR</h2>
+                    <p>Join our community and help us reach likeminded environmentalists like yourselves.
+                        <br>
+                        We want people just like you to show off our sustainable products and attract those who care
+                        about the ocean like we do here at copenhagen cartel.
+                    </p>
+                </div>
+                <div class="about_sea_allies">
+                    <h3>Allies of the sea!</h3>
+                    <p>We turn waste into value. Guided by the belief that production and consumption should not come at
+                        the expense of the ocean, we take action to regenerate our oceans.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section id="slider">
+            <article class="slider">
+                <span>LET'S SAFE THE OCEAN TOGETHER</span>
+            </article>
+            <article class="slider slider_second">
+                <span>LET'S SAFE THE OCEAN TOGETHER</span>
+            </article>
+        </section>
+        <section id="problem">
+            <article id="the_problem">
+                <h2>THE PROBLEM</h2>
+                <p>Plastic solved many of our daily problems when it was invented. We could store items in containers
+                    now, in our desired sizes, water in bottles, food in containers, trash in plastic bags. For years we
+                    used plastic with no apparent consequence.
+                    <br><br>
+                    However, those times have changed. Now we know the harm that is brought upon oceans due to our
+                    excessive use of plastic. It is no longer ok not to know about the problem.
+                    <br><br>
+                    Our problem now is not to single handedly clean up the ocean but make sure that all of us know about
+                    the sustainable goals that companies can follow. Help us let the world know that being sustainable
+                    isnt a practice that should be followed but that needs to be followed before anything else
+                </p>
+            </article>
+            <article id="crash_spirit">
+                <h4>Do these pictures crush your spirit?</h4>
+                <img id="crash_img" src="/media/ocean_problem.png"
+                    alt="Pitures presented plastic polution in tjhe ocean">
+            </article>
+        </section>
+        <section id="meet_ambassadors">
+            <template>
+                <article class="ambassadors">
+                    <img src="https://johannela.dk/car…/11/caroline-199x300.png" alt="caroline" />
+                    <p class="name">Caroline</p>
+                    <p class="description">
+                        Caroline has been volunteering since she was a young child in
+                        numerous organisations. Now she wants to use social media to share
+                        her mission with others...
+                    </p>
+                    <p class="favorite">Favorite Sea Creature: <span>Octopus</span></p>
+                    <div class="ig__username">
+                        <span>IG username -</span>
+
+                        <div class="IG__name">Caroline</div>
+                    </div>
+                    <a class="ig__link" href="#">Link to IG profile: </a>
+                </article>
+            </template>
+        </section>
+
     </main>
     <script src="../js/nav.js"></script>
     <script src="../js/ambassadors.js"></script>

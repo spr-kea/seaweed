@@ -39,7 +39,7 @@ function showSingleAmbassador(ambassador) {
     ][0].media_details.sizes.medium.source_url;
   //brand
 
-  const parent = document.querySelector("main");
+  const parent = document.querySelector("#meet_ambassadors");
   parent.appendChild(clone);
 }
 

@@ -1,19 +1,26 @@
-:root {
-  --black: #000000;
-  --white: #ffffff;
-  --blue: blue;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --black: #1f1f20;
+  --white: #fafafa;
+  --blue: #0b25b7;
+  --babyblue: #d7e4f2;
+  --orange: #fc6d3a;
+
+  /* --h1: 2rem;
+  --h2: 1rem;
+  --h3: 2rem;
+  --h4: 1.5rem;
+  --p: 1rem; */
+}
 
 main {
-  width: 90vw;
-  height: 100vh;
+  height: auto;
   margin: auto;
+  background-color: var(--white);
 }
 /* Navbar */
 nav {
@@ -90,11 +97,6 @@ a.nav-link::after {
   font-size: 1.5rem;
   color: var(--white);
   padding: 0 1rem;
-}
-
-p {
-  text-align: center;
-  font-size: 1rem;
 }
 
 /* //media query for mobile  */

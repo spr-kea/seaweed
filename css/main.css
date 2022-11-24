@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: Satoshi_light;
+  src: url("/font/Satoshi-Light.otf");
+}
+@font-face {
+  font-family: Satoshi_bold;
+  src: url("/font/Satoshi-bold.otf");
+}
+:root {
+  --black: #1f1f20;
+  --white: #fafafa;
+  --blue: #0b25b7;
+  --babyblue: #d7e4f2;
+  --orange: #fc6d3a;
+
+  --h1: 1.3rem;
+  --h2: 2rem;
+  --h3: 1.6rem;
+  --h4: 1.2rem;
+  --p: 1rem;
+}
+h2::before,
+h3::before,
+h4::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 30px;
+  background-color: var(--orange);
+}
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+  font-family: Satoshi_bold;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: var(--h3);
+  font-family: Satoshi_bold;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: var(--h4);
+  font-family: Satoshi_bold;
+  text-transform: uppercase;
+}
+p {
+  font-size: var(--p);
+}
+button {
+  font-size: var(--h4);
+  font-family: Satoshi_bold;
+}
+
+html {
+  font-family: Satoshi_light;
+}
+/* ------------------WELCOME------------------ */
+#welcome_and_about {
+  background-image: url("/media/ocean1_bg.jpg");
+  height: 180vh;
+  width: 100vw;
+  background-position: center top;
+  color: var(--white);
+}
+#welcome {
+  padding-top: 130px;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  gap: 60px;
+}
+.welcome_logo img {
+  max-width: 80vw;
+}
+.welcome_button a button {
+  margin-top: 12rem;
+  padding: 15px 30px;
+  background-color: var(--black);
+  opacity: 80%;
+  color: var(--orange);
+  border: none;
+}
+/* ------------------ABOUT------------------ */
+#about {
+  max-width: 80vw;
+  margin: 10rem auto auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about_sea_allies {
+  padding-top: 10rem;
+}
+/* ------------------SLIDER------------------ */
+#slider {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 250px;
+  margin: auto;
+  color: var(--orange);
+  overflow: hidden;
+}
+.slider {
+  position: absolute;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 100%;
+  height: 100%;
+}
+
+.slider span {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 100%;
+  height: 100%;
+  font-size: 200px;
+  font-family: Satoshi_bold;
+  animation: slide 20s linear infinite;
+  padding-left: 100%;
+  overflow: hidden;
+  border: none;
+}
+.slider_second span {
+  animation-delay: 10s;
+}
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  95% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+/* ------------------THE PROBLEM------------------ */
+#problem {
+  background-image: url("/media/ocean2_bg.jpg");
+  background-position: 70% top;
+  color: var(--white);
+}
+#the_problem {
+  max-width: 70vw;
+  margin: 3rem auto;
+}
+#crash_spirit {
+  max-width: 70vw;
+  margin: 3rem auto;
+}
+#crash_img {
+  width: 80vw;
+  height: auto;
+}
