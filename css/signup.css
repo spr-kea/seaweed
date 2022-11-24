@@ -20,6 +20,10 @@
 
 }
 
+.signuph3 {
+    z-index: 1000;
+}
+
 #flexwrap {
     display: flex;
     flex-direction: row;
@@ -48,6 +52,49 @@
     color: white;
     padding-left: 2vw;
 }
+
+.colorbox-wrap1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#colorbox-container1 {
+    background-color: orange;
+    height: 30px;
+    width: 150px;
+    transform: translate(-40px, -30px);
+    z-index: 1;
+}
+
+#colorbox-container2 {
+    background-color: orange;
+    height: 30px;
+    width: 150px;
+    transform: translate(-40px, -30px);
+    z-index: 1;
+}
+
+#colorbox-container3 {
+    background-color: orange;
+    height: 30px;
+    width: 150px;
+    transform: translate(-40px, -30px);
+    z-index: 1;
+}
+
+.colorbox-wrap2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colorbox-wrap3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /*form styling*/
 .h2-form-class {
@@ -149,6 +196,16 @@ textarea {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+#submit:hover {
+    background-color: orange;
+}
+
+#submit:active {
+    background-color: orange;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 @media screen and (max-width: 992px) {
