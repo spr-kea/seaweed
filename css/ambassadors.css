@@ -1,12 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat&display=swap");
-:root {
-  --black: #000000;
-  --white: #ffffff;
-  --lightblue: #d7e4f2;
-  --blue: #0b25b7;
-  --orange: #fc6d3a;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 16px;
 }
+:root {
+  --black: #1f1f20;
+  --white: #fafafa;
+  --blue: #0b25b7;
+  --babyblue: #d7e4f2;
+  --orange: #fc6d3a;
 
+  --h1: 1.3rem;
+  --h2: 2rem;
+  --h3: 1.6rem;
+  --h4: 1.2rem;
+  --p: 1rem;
+}
+h2::before,
+h3::before,
+h4::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 30px;
+  background-color: var(--orange);
+}
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+  font-family: Satoshi_bold;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: var(--h3);
+  font-family: Satoshi_bold;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: var(--h4);
+  font-family: Satoshi_bold;
+  text-transform: uppercase;
+}
+p {
+  font-size: var(--p);
+}
+button,
+a {
+  font-size: var(--h4);
+  font-family: Satoshi_bold;
+}
+@font-face {
+  font-family: Satoshi_light;
+  src: url("/font/Satoshi-Light.otf");
+}
+@font-face {
+  font-family: Satoshi_bold;
+  src: url("/font/Satoshi-bold.otf");
+}
 #meet_ambassadors {
   align-items: flex-start;
 }
@@ -34,7 +88,6 @@
 .favorite,
 .ig__username,
 .description {
-  font-family: Inter;
   text-align: left;
   padding: 5px;
 }
@@ -55,7 +108,6 @@
   margin-top: 2em;
   text-align: center;
   text-decoration: none;
-  font-family: Inter;
   color: var(--white);
   padding: 1em 4em;
 }
@@ -63,19 +115,31 @@
 .ig__btn2 {
   background-color: var(--orange);
   color: var(--white);
-  transform: translateY(600px);
 }
 
 .landing_bottom {
+  width: 100vw;
+  margin: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.turtle_img {
+  background-image: url("/media/ocean3.1_bg.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center top;
+  background-repeat: none;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .ig__btn {
-  align-self: center;
-  justify-self: center;
-  transform: translateY(-50px);
+  margin: auto;
+  margin-bottom: 10rem;
 }
 
 .ig__btn:hover {
@@ -89,7 +153,6 @@
 }
 
 .name {
-  font-family: montserrat;
   font-size: 1.5em;
   padding-top: 1.5em;
   z-index: 1000;
@@ -97,7 +160,7 @@
 }
 
 .coloredbox {
-  background-color: var(--lightblue);
+  background-color: var(--babyblue);
   height: 30px;
   width: 120px;
   transform: translate(40px, -40px);
@@ -126,13 +189,11 @@
     max-width: 10ch;
     color: var(--white);
     opacity: 20%;
-    font-family: inter;
   }
 
   .ig__btn2 {
     background-color: var(--orange);
     color: var(--white);
-    transform: translateY(300px);
   }
 }
 
@@ -156,13 +217,11 @@
     max-width: 10ch;
     color: var(--white);
     opacity: 20%;
-    font-family: inter;
   }
 
   .ig__btn2 {
     background-color: var(--orange);
     color: var(--white);
-    transform: translateY(600px);
   }
 }
 
@@ -174,7 +233,6 @@
 }
 
 .ambassador_header {
-  font-family: Inter;
   margin-top: 1em;
   z-index: 1000;
   font-size: 3em;
@@ -184,7 +242,6 @@
 }
 
 .ambassador_header2 {
-  font-family: Inter;
   max-width: 65ch;
   color: var(--blue);
   padding-left: 1em;
@@ -192,7 +249,7 @@
 }
 
 .coloredbox2 {
-  background-color: var(--lightblue);
+  background-color: var(--babyblue);
   height: 50px;
   width: 400px;
   transform: translate(-140px, -65px);
@@ -202,18 +259,15 @@
   .makeDifference {
     font-size: 6em;
     align-self: flex-start;
-    transform: translateY(42vh);
     font-weight: bold;
     max-width: 10ch;
     color: var(--white);
     opacity: 20%;
-    font-family: inter;
   }
 
   .ig__btn2 {
     background-color: var(--orange);
     color: var(--white);
-    transform: translateY(200px);
   }
 
   img {
