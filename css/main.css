@@ -27,15 +27,6 @@
   --h4: 1.2rem;
   --p: 1rem;
 }
-h2::before,
-h3::before,
-h4::before {
-  content: "";
-  display: block;
-  width: 120px;
-  height: 30px;
-  background-color: var(--orange);
-}
 h1 {
   font-size: var(--h1);
 }
@@ -68,7 +59,8 @@ html {
 /* ------------------WELCOME------------------ */
 #welcome_and_about {
   background-image: url("/media/ocean1_bg.jpg");
-  height: 180vh;
+  background-repeat: no-repeat;
+  min-height: 200vh;
   width: 100vw;
   background-position: center top;
   color: var(--white);
@@ -168,4 +160,40 @@ html {
 #crash_img {
   width: 80vw;
   height: auto;
+}
+
+@media only screen and (min-width: 900px) {
+  :root {
+    --h1: 1.7rem;
+    --h2: 3rem;
+    --h3: 2.2rem;
+    --h4: 1.6rem;
+    --p: 1.3rem;
+  }
+  #welcome {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  :root {
+    --h1: 3rem;
+    --h2: 3rem;
+    --h3: 2.2rem;
+    --h4: 1.6rem;
+    --p: 1.3rem;
+  }
+  #about p {
+    max-width: 500px;
+    margin-top: 2rem;
+  }
+
+  .about_sea_allies {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .about_sea_allies {
+    padding-top: 0rem;
+  }
 }
