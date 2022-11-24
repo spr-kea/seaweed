@@ -5,6 +5,50 @@
     --lightblue: #D7E4F2;
 }
 
+#flexbox {
+    margin-top: 10vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    background-image: url(/media/seaturtle-signup.jpg);
+}
+
+#flexbox .signuph2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vw;
+
+}
+
+#flexwrap {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+
+}
+
+
+#container1 {
+    color: white;
+    padding-right: 2vw;
+}
+
+#container2 {
+    color: white;
+    border-left: white solid 0.3em;
+    border-right: white solid 0.3em;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+}
+
+#container3 {
+    color: white;
+    padding-left: 2vw;
+}
+
 /*form styling*/
 .h2-form-class {
     display: flex;
@@ -107,52 +151,50 @@ textarea {
     font-size: 16px;
 }
 
-
-#flexbox {
-    margin-top: 10vw;
-    padding-top: 2vw;
-    padding-bottom: 4vw;
-    background-image: url(/media/seaturtle-signup.jpg);
-}
-
-#flexbox .signuph2 {
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2vw;
-
-}
-
-#flexwrap {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10vw;
-    margin-right: 10vw;
-
-
-}
-
-
-#container1 {
-    color: white;
-    padding-right: 2vw;
-}
-
-#container2 {
-    color: white;
-    border-left: white solid 0.3em;
-    border-right: white solid 0.3em;
-    padding-left: 2vw;
-    padding-right: 2vw;
-
-}
-
-#container3 {
-    color: white;
-    padding-left: 2vw;
-}
-
 @media screen and (max-width: 992px) {
+    #flexbox {
+        margin-top: 10vw;
+        padding-top: 4vw;
+        padding-bottom: 10vw;
+        background-image: url(/media/seaturtle-signup.jpg);
+    }
+
+    #flexbox .signuph2 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 6vw;
+    }
+
+    #flexwrap {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+
+    #container1 {
+        color: white;
+        padding-bottom: 6vw;
+    }
+
+    #container2 {
+        color: white;
+        border-top: white solid 0.3em;
+        border-bottom: white solid 0.3em;
+        border-left: none;
+        border-right: none;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+
+    }
+
+    #container3 {
+        color: white;
+        padding-top: 6vw;
+    }
+
     #submiit_template {
         border: 4px solid blue;
         border-radius: 1rem;
@@ -234,49 +276,6 @@ textarea {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-    }
-
-    #flexbox {
-        margin-top: 10vw;
-        padding-top: 4vw;
-        padding-bottom: 10vw;
-        background-image: url(/media/seaturtle-signup.jpg);
-    }
-
-    #flexbox .signuph2 {
-        color: white;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 6vw;
-    }
-
-    #flexwrap {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-
-
-    #container1 {
-        color: white;
-        padding-bottom: 6vw;
-    }
-
-    #container2 {
-        color: white;
-        border-top: white solid 0.3em;
-        border-bottom: white solid 0.3em;
-        border-left: none;
-        border-right: none;
-        padding-top: 4vw;
-        padding-bottom: 4vw;
-
-    }
-
-    #container3 {
-        color: white;
-        padding-top: 6vw;
     }
 
 }
