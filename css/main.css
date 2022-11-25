@@ -8,11 +8,11 @@
 
 @font-face {
   font-family: Satoshi_light;
-  src: url("/font/Satoshi-Light.otf");
+  src: url("font/Satoshi-Light.otf");
 }
 @font-face {
   font-family: Satoshi_bold;
-  src: url("/font/Satoshi-bold.otf");
+  src: url("font/Satoshi-bold.otf");
 }
 :root {
   --black: #1f1f20;
@@ -58,7 +58,7 @@ html {
 }
 /* ------------------WELCOME------------------ */
 #welcome_and_about {
-  background-image: url("/media/ocean1_bg.jpg");
+  background-image: url("media/ocean1_bg.jpg");
   background-repeat: no-repeat;
   min-height: 200vh;
   width: 100vw;
@@ -152,7 +152,7 @@ html {
 }
 /* ------------------THE PROBLEM------------------ */
 #problem {
-  background-image: url("/media/ocean2_bg.jpg");
+  background-image: url("media/ocean2_bg.jpg");
   background-position: 70% top;
   color: var(--white);
 }

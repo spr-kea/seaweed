@@ -47,15 +47,15 @@ a {
 }
 @font-face {
   font-family: Satoshi_light;
-  src: url("/font/Satoshi-Light.otf");
+  src: url("font/Satoshi-Light.otf");
 }
 @font-face {
   font-family: Satoshi_regular;
-  src: url("/font/Satoshi-Regular.otf");
+  src: url("font/Satoshi-Regular.otf");
 }
 @font-face {
   font-family: Satoshi_bold;
-  src: url("/font/Satoshi-bold.otf");
+  src: url("font/Satoshi-bold.otf");
 }
 #meet_ambassadors {
   align-items: flex-start;
@@ -124,7 +124,7 @@ a {
   justify-content: space-around;
 }
 .turtle_img {
-  background-image: url("/media/ocean3.1_bg.jpg");
+  background-image: url("media/ocean3.1_bg.jpg");
   height: 100vh;
   width: 100vw;
   background-position: center top;
