@@ -47,15 +47,15 @@ a {
 }
 @font-face {
   font-family: Satoshi_light;
-  src: url("font/Satoshi-Light.otf");
+  src: url("../font/Satoshi-Light.otf");
 }
 @font-face {
   font-family: Satoshi_regular;
-  src: url("font/Satoshi-Regular.otf");
+  src: url("../font/Satoshi-Regular.otf");
 }
 @font-face {
   font-family: Satoshi_bold;
-  src: url("font/Satoshi-bold.otf");
+  src: url("../font/Satoshi-bold.otf");
 }
 #meet_ambassadors {
   align-items: flex-start;
