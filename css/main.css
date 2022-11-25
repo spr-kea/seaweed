@@ -85,6 +85,13 @@ html {
   opacity: 80%;
   color: var(--orange);
   border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.welcome_button a button:hover {
+  background-color: var(--orange);
+  color: var(--black);
+  overflow: hidden;
 }
 /* ------------------ABOUT------------------ */
 #about {
@@ -150,14 +157,19 @@ html {
   color: var(--white);
 }
 #the_problem {
+  margin-top: 2rem;
   max-width: 70vw;
   margin: 3rem auto;
+}
+#the_problem p {
+  margin-top: 2rem;
 }
 #crash_spirit {
   max-width: 70vw;
   margin: 3rem auto;
 }
 #crash_img {
+  margin-top: 2rem;
   width: 80vw;
   height: auto;
 }
@@ -168,7 +180,7 @@ html {
     --h2: 3rem;
     --h3: 2.2rem;
     --h4: 1.6rem;
-    --p: 1.3rem;
+    --p: 1rem;
   }
   #welcome {
     max-width: 1000px;
@@ -180,7 +192,7 @@ html {
     --h2: 3rem;
     --h3: 2.2rem;
     --h4: 1.6rem;
-    --p: 1.3rem;
+    --p: 1.1rem;
   }
   #about p {
     max-width: 500px;
@@ -195,5 +207,10 @@ html {
   }
   .about_sea_allies {
     padding-top: 0rem;
+  }
+
+  #crash_img {
+    width: 30vw;
+    margin: auto;
   }
 }

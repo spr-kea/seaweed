@@ -1,158 +1,170 @@
 :root {
-    --black: #000000;
-    --white: #ffffff;
-    --blue: blue;
-    --lightblue: #D7E4F2;
-    --orange: #FC6D3A;
+  --black: #1f1f20;
+  --white: #fafafa;
+  --blue: #0b25b7;
+  --babyblue: #d7e4f2;
+  --orange: #fc6d3a;
+}
+html {
+  background-color: var(--white);
 }
 
+/* VIDEO ---------- */
+#video {
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+}
+#myVideo {
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+}
 #flexbox {
-    margin-top: 10vw;
-    padding-top: 2vw;
-    padding-bottom: 4vw;
-    background-image: url(/media/seaturtle-signup.jpg);
+  margin-top: 10vw;
+  padding-top: 2vw;
+  padding-bottom: 4vw;
+  background-image: url(/media/seaturtle-signup.jpg);
+  background-position: 70% -10%;
+  background-repeat: no-repeat;
 }
 
 #flexbox .signuph2 {
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2vw;
-
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2vw;
+  margin: auto;
 }
 
 .signuph3 {
-    z-index: 1000;
+  z-index: 1000;
 }
 
 #flexwrap {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10vw;
-    margin-right: 10vw;
-
-
+  display: flex;
+  flex-direction: row;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
-
 #container1 {
-    color: white;
-    padding-right: 2vw;
+  color: white;
+  padding-right: 2vw;
 }
 
 #container2 {
-    color: white;
-    border-left: white solid 0.3em;
-    border-right: white solid 0.3em;
-    padding-left: 2vw;
-    padding-right: 2vw;
-
+  color: white;
+  border-left: white solid 0.3em;
+  border-right: white solid 0.3em;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 #container3 {
-    color: white;
-    padding-left: 2vw;
+  color: white;
+  padding-left: 2vw;
 }
 
 .colorbox-wrap1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #colorbox-container1 {
-    background-color: #FC6D3A;
-    height: 30px;
-    width: 150px;
-    transform: translate(-40px, -30px);
-    z-index: 1;
+  background-color: #fc6d3a;
+  height: 30px;
+  width: 150px;
+  transform: translate(-40px, -30px);
+  z-index: 1;
 }
 
 #colorbox-container2 {
-    background-color: #FC6D3A;
-    height: 30px;
-    width: 150px;
-    transform: translate(-40px, -30px);
-    z-index: 1;
+  background-color: #fc6d3a;
+  height: 30px;
+  width: 150px;
+  transform: translate(-40px, -30px);
+  z-index: 1;
 }
 
 #colorbox-container3 {
-    background-color: #FC6D3A;
-    height: 30px;
-    width: 150px;
-    transform: translate(-40px, -30px);
-    z-index: 1;
+  background-color: #fc6d3a;
+  height: 30px;
+  width: 150px;
+  transform: translate(-40px, -30px);
+  z-index: 1;
 }
 
 .colorbox-wrap2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .colorbox-wrap3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 /*form styling*/
 .h2-form-class {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #h2-form {
-    color: blue;
-    display: flex;
-    justify-content: center;
-    margin-top: 10vw;
-    z-index: 1000;
-    font-size: 3rem;
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  margin-top: 10vw;
+  z-index: 1000;
+  font-size: 3rem;
 }
 
 #h2-color-box-signup {
-    background-color: #D7E4F2;
-    height: 60px;
-    width: 400px;
-    transform: translate(-60px, -85px);
-    z-index: 1;
+  background-color: var(--babyblue);
+  height: 60px;
+  width: 400px;
+  transform: translate(-60px, -85px);
+  z-index: 1;
 }
 
 #submiit_template {
-    border: 4px solid blue;
-    margin-top: 2vw;
-    padding: 4vw
+  border: 4px solid var(--babyblue);
+  margin-top: 2vw;
+  padding: 4vw;
+  width: 80vw;
+  margin: auto auto 3rem auto;
 }
 
 form {
-    box-sizing: border-box;
-    padding: 2rem;
-    background-color: hsl(0, 0%, 100%);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10rem;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
 }
-
 
 fieldset,
 input,
 legend,
 select,
 textarea {
-    appearance: none;
+  appearance: none;
 }
 
 textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    border: 2px solid blue;
-    background-color: white;
-
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--blue);
 }
 
 input[type="text"],
@@ -160,180 +172,174 @@ input[type="email"],
 input[type="url"],
 select,
 textarea {
+  font: 1.25rem / 1.5 sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--blue);
+}
+
+/*name a class to headlines*/
+.large-label {
+  color: var(--blue);
+  display: inline-block;
+  font: bold 1.5rem sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+#form-container1 {
+  display: grid;
+  grid-gap: 4rem;
+}
+
+#form-container2 {
+  display: grid;
+  grid-gap: 4rem;
+}
+
+#submit {
+  background-color: #fc6d3a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#submit:hover {
+  background-color: #fc6d3a;
+}
+
+#submit:active {
+  background-color: #fc6d3a;
+  box-shadow: 0 5px rgb(142, 140, 140);
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 992px) {
+  #flexbox {
+    padding-top: 4vw;
+    padding-bottom: 10vw;
+    min-height: 100vh;
+    background-position: 85% -10%;
+  }
+
+  #flexbox .signuph2 {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6vw;
+  }
+
+  #flexwrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  #container1 {
+    color: white;
+    padding-bottom: 6vw;
+  }
+
+  #container2 {
+    color: white;
+    border-top: white solid 0.3em;
+    border-bottom: white solid 0.3em;
+    border-left: none;
+    border-right: none;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+
+  #container3 {
+    color: white;
+    padding-top: 6vw;
+  }
+
+  #submiit_template {
+    margin-top: 2vw;
+    margin: auto;
+    width: 90vw;
+  }
+
+  form {
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  fieldset,
+  input,
+  legend,
+  select,
+  textarea {
+    appearance: none;
+  }
+
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  select,
+  textarea {
     font: 1.25rem / 1.5 sans-serif;
     display: block;
     box-sizing: border-box;
     width: 100%;
     padding: 0.5rem 0.75rem;
-    border: 2px solid blue;
+  }
 
-}
-
-
-/*name a class to headlines*/
-.large-label {
-    color: blue;
+  /*name a class to headlines*/
+  .large-label {
     display: inline-block;
     font: bold 1.5rem sans-serif;
     margin-bottom: 0.5rem;
-}
+  }
 
-#form-container1 {
+  #form-container1 {
     display: grid;
     grid-gap: 4rem;
-}
+  }
 
-#form-container2 {
+  #form-container2 {
     display: grid;
     grid-gap: 4rem;
-}
+  }
 
-#submit {
-    background-color: #FC6D3A;
+  #button-submit {
+    display: flex;
+    justify-content: center;
+  }
+
+  #submit {
+    background-color: #fc6d3a;
     border: none;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+  }
 }
-
-#submit:hover {
-    background-color: #FC6D3A;
-}
-
-#submit:active {
-    background-color: #FC6D3A;
-    box-shadow: 0 5px rgb(142, 140, 140);
-    transform: translateY(4px);
-}
-
-@media screen and (max-width: 992px) {
-    #flexbox {
-        margin-top: 10vw;
-        padding-top: 4vw;
-        padding-bottom: 10vw;
-        background-image: url(/media/seaturtle-signup.jpg);
-    }
-
-    #flexbox .signuph2 {
-        color: white;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 6vw;
-    }
-
-    #flexwrap {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-
-
-    #container1 {
-        color: white;
-        padding-bottom: 6vw;
-    }
-
-    #container2 {
-        color: white;
-        border-top: white solid 0.3em;
-        border-bottom: white solid 0.3em;
-        border-left: none;
-        border-right: none;
-        padding-top: 4vw;
-        padding-bottom: 4vw;
-
-    }
-
-    #container3 {
-        color: white;
-        padding-top: 6vw;
-    }
-
-    #submiit_template {
-        border: 4px solid blue;
-        border-radius: 1rem;
-        margin-top: 2vw;
-    }
-
-    form {
-        box-sizing: border-box;
-        padding: 2rem;
-        background-color: hsl(0, 0%, 100%);
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-    }
-
-
-    fieldset,
-    input,
-    legend,
-    select,
-    textarea {
-        appearance: none;
-    }
-
-    textarea {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-color: transparent;
-        border: 2px solid blue;
-        background-color: white;
-        border-radius: 0.5rem;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="url"],
-    select,
-    textarea {
-        font: 1.25rem / 1.5 sans-serif;
-        display: block;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 0.5rem 0.75rem;
-        border: 2px solid blue;
-        border-radius: 0.5rem;
-    }
-
-
-    /*name a class to headlines*/
-    .large-label {
-        color: blue;
-        display: inline-block;
-        font: bold 1.5rem sans-serif;
-        margin-bottom: 0.5rem;
-    }
-
-    #form-container1 {
-        display: grid;
-        grid-gap: 4rem;
-    }
-
-    #form-container2 {
-        display: grid;
-        grid-gap: 4rem;
-    }
-
-    #button-submit {
-        display: flex;
-        justify-content: center;
-    }
-
-    #submit {
-        background-color: #FC6D3A;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-    }
-
+@media screen and (min-width: 992px) {
+  #video {
+    height: 100vh;
+  }
+  #myVideo {
+    height: 100vh;
+  }
 }

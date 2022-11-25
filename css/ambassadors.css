@@ -18,17 +18,7 @@
   --h4: 1.2rem;
   --p: 1rem;
 }
-h2::before,
-h3::before,
-h4::before {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 70px;
-  background-color: var(--orange);
-  position: absolute;
-  mix-blend-mode: hue;
-}
+
 h1 {
   font-size: var(--h1);
 }
@@ -144,6 +134,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  overflow: hidden;
 }
 .ig__btn {
   margin: auto;
@@ -192,7 +183,7 @@ a {
   .makeDifference {
     font-size: 4em;
     align-self: flex-start;
-    transform: translateY(52vh);
+    overflow: hidden;
     font-weight: bold;
     max-width: 10ch;
     color: var(--white);
@@ -219,8 +210,8 @@ a {
 
   .makeDifference {
     font-size: 7em;
-    align-self: flex-start;
-    transform: translateY(62vh);
+
+    overflow: hidden;
     font-weight: bold;
     max-width: 10ch;
     color: var(--white);
@@ -266,7 +257,8 @@ a {
 @media only screen and (max-width: 899px) {
   .makeDifference {
     font-size: 6em;
-    align-self: flex-start;
+    overflow: hidden;
+
     font-weight: bold;
     max-width: 10ch;
     color: var(--white);
