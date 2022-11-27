@@ -4,16 +4,16 @@
   box-sizing: border-box;
   overflow-x: hidden;
   font-size: 16px;
-  font-family: Satoshi_light;
+  font-family: "Satoshi_light";
 }
 
 @font-face {
-  font-family: Satoshi_light;
+  font-family: "Satoshi_light";
   src: url("../font/Satoshi-Light.otf");
 }
 @font-face {
-  font-family: Satoshi_bold;
-  src: url("../font/Satoshi-bold.otf");
+  font-family: "Satoshi_bold";
+  src: url("../font/Satoshi-Bold.otf");
 }
 :root {
   --black: #1f1f20;
@@ -33,17 +33,17 @@ h1 {
 }
 h2 {
   font-size: var(--h2);
-  font-family: Satoshi_bold;
+  font-family: "Satoshi_bold";
   text-transform: uppercase;
 }
 h3 {
   font-size: var(--h3);
-  font-family: Satoshi_bold;
+  font-family: "Satoshi_bold";
   text-transform: uppercase;
 }
 h4 {
   font-size: var(--h4);
-  font-family: Satoshi_bold;
+  font-family: "Satoshi_bold";
   text-transform: uppercase;
 }
 p {
@@ -51,11 +51,11 @@ p {
 }
 button {
   font-size: var(--h4);
-  font-family: Satoshi_bold;
+  font-family: "Satoshi_bold";
 }
 
 html {
-  font-family: Satoshi_light;
+  font-family: "Satoshi_light";
 }
 /* ------------------WELCOME------------------ */
 #welcome_and_about {
@@ -131,7 +131,7 @@ html {
   min-width: 100%;
   height: 100%;
   font-size: 200px;
-  font-family: Satoshi_bold;
+  font-family: "Satoshi_bold";
   animation: slide 20s linear infinite;
   padding-left: 100%;
   overflow: hidden;
