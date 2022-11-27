@@ -18,7 +18,18 @@
   --h4: 1.2rem;
   --p: 1rem;
 }
-
+@font-face {
+  font-family: Satoshi_light;
+  src: url("../font/Satoshi-Light.otf");
+}
+@font-face {
+  font-family: Satoshi_regular;
+  src: url("../font/Satoshi-Regular.otf");
+}
+@font-face {
+  font-family: Satoshi_bold;
+  src: url("../font/Satoshi-bold.otf");
+}
 h1 {
   font-size: var(--h1);
 }
@@ -45,18 +56,7 @@ a {
   font-size: var(--h4);
   font-family: Satoshi_bold;
 }
-@font-face {
-  font-family: Satoshi_light;
-  src: url("../font/Satoshi-Light.otf");
-}
-@font-face {
-  font-family: Satoshi_regular;
-  src: url("../font/Satoshi-Regular.otf");
-}
-@font-face {
-  font-family: Satoshi_bold;
-  src: url("../font/Satoshi-bold.otf");
-}
+
 #meet_ambassadors {
   align-items: flex-start;
 }
